@@ -2,7 +2,7 @@
 
 This is the front-end of the [GoBarber](https://github.com/ChechoCZ/go-barber-backend) project.
 
-This project intends to be an online appointment for a barber shop. It was developed using **React** and the following tools:
+This project is an online appointment for a barber shop. It was developed using **React** and the following tools:
  - PropTypes
  - Yup
  - Styled Components
