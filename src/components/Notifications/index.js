@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { MdNotifications } from 'react-icons/md';
-import { parseIso, formatDistance} from 'date-fns';
+import { parseISO, formatDistance } from 'date-fns';
 
 import api from '../../services/api';
 
@@ -11,7 +11,7 @@ export default function Notifications() {
   const [notifications, setNotifications] = useState([]);
 
   const hasUnreadNotifications = useMemo(
-    () => !!notifications.find(notification => notification.read === false)
+    () => !!notifications.find(notification => notification.read === false),
     [notifications]
   );
 
@@ -21,7 +21,7 @@ export default function Notifications() {
 
       const data = response.data.map(notification => ({
         ...notification,
-        timeDistance: formatDistance(parseIso(notification.createdAt), new Date(), { addSuffix: true })
+        timeDistance: formatDistance(parseISO(notification.createdAt), new Date(), { addSuffix: true })
       }));
 
       setNotifications(data);
