@@ -3,10 +3,32 @@
 This is the front-end of the [GoBarber](https://github.com/ChechoCZ/go-barber-backend) project.
 
 This project is an online appointment for a barber shop. It was developed using **React** and the following tools:
- - PropTypes
- - Yup
- - Styled Components
- - Polished
+ - ###### Data validation
+   - yup
+
+ - ###### Navigation
+   - history
+   - react-router-dom
+
+ - ###### Dates
+   - date-nfs
+   - date-nfs-tz
+
+ - ###### HTTP Req
+   - axios
+ 
+ - ###### State Management:
+   - immer
+   - redux
+   - sagas
+   - redux-persist
+
+ - ###### Styling:
+   - polished
+   - react-icons
+   - react-tostify
+   - styled-components
+   - react-perfect-scrollbar
 
 ### How to run
 Install all the dependencies:
